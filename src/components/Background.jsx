@@ -1,5 +1,5 @@
 import * as THREE from "three";
-import { Environment, Sphere, Stars } from '@react-three/drei';
+import { Environment, Sphere } from '@react-three/drei';
 import { Gradient, LayerMaterial } from 'lamina';
 
 export function Background () {
@@ -30,9 +30,5 @@ export function Background () {
 
 /*
 			<Environment ground preset="night">
-
 			</Environment>
-
-			<Stars radius={100} depth={50} count={5000} factor={4} saturation={0} fade speed={1} />
-
 */

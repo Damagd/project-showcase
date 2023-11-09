@@ -1,8 +1,7 @@
-import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
 export function Constructor(props) {
-  const { nodes, materials } = useGLTF("/Constructor.glb");
+  const { nodes } = useGLTF("/Constructor.glb");
   return (
     <group {...props} dispose={null}>
       <group scale={0.13}  position={[0, 59.1, 0]} rotation={[0,-1.47,0]}>

@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
-export function Car(props) {
+export function Car() {
   const { nodes, materials } = useGLTF("/Red-car-cargo.glb");
   return (
     <mesh
