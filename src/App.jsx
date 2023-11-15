@@ -4,7 +4,7 @@ import { Scene } from './Scene.jsx'
 
 function App() {
   return (
-    <Canvas shadows>
+    <Canvas shadows camera={{position: [-100, 60, -100], fov: 60}}>
       <Scene></Scene>
     </Canvas>
   )

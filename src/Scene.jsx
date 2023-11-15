@@ -10,7 +10,12 @@ export function Scene() {
 
       <Actores />
       
-      <OrbitControls />
+      <OrbitControls
+      enablePan={false}
+      maxPolarAngle={Math.PI / 2.1}
+      minDistance={3}
+      maxDistance={200}
+      />
     </>
 
   );
