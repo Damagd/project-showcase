@@ -1,6 +1,4 @@
 import { useGLTF } from "@react-three/drei";
-import { useFrame } from "@react-three/fiber";
-import { useSteering } from "../hooks/useSteering";
 
 export function Car() {
   const { nodes, materials } = useGLTF("/Red-car-cargo.glb");
