@@ -2,6 +2,7 @@ import { Titulo } from "../overlay/Titulo"
 import { Nav } from "../overlay/Nav"
 import { useRef, useState } from "react"
 import { Information } from "../overlay/Information";
+import { Modal } from "../overlay/Modal";
 
 export function Overlay() {
   const [deblured, setDeblured] = useState(false);
@@ -9,21 +10,25 @@ export function Overlay() {
   const cBlur = 'portada' + (!deblured ? '' : ' deblured');
 
   const applyBlur = () => {
-    if(header.current.className.includes('deblured'))
-      setDeblured(false);
-    else
-      setDeblured(true);
+    setDeblured(true);   
+  }
+
+  const removeBlur = () => {
+    setDeblured(false);
   }
 
   return(
     <>
-      <header ref={header} className={cBlur}>
+      <div className={"blur-overlay-screen " + (deblured ? 'deblured' : '')}></div>
+      <Modal />
+      <header ref={header} className={cBlur + ' fadeIn'}>
         <Titulo hide={deblured}/>
-        <Nav hide={deblured} applyBlur={applyBlur} />
+        <Nav hide={deblured} applyBlur={applyBlur} removeBlur={removeBlur} />
       </header>
       <main id="main">
         <Information />
       </main>
+
     </>
 
   )

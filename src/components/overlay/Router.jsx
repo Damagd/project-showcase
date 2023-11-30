@@ -1,6 +1,7 @@
 import { useListenToPath } from "../../hooks/useListenToPath";
+import { EmptyPage } from "./EmptyPage";
 
-export function Router({routes = [], defaultComponent: DefaultComponent = () => <h1>404</h1>  }) {
+export function Router({routes = [], defaultComponent: DefaultComponent = () => <EmptyPage />  }) {
   const {currentPath} = useListenToPath();
 
 

@@ -1,0 +1,93 @@
+.card {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.25rem;
+  color: var(--blanco_noinv_color);
+  
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.card * {
+  cursor: pointer;
+}
+
+.card:active {
+  background-color: var(--blanco_stroke_color);
+}
+
+.card .card-info {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(0px);
+  height: 100%;
+  justify-content:space-between;
+  border-radius: 20px;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  z-index: 1;
+  transition: backdrop-filter 150ms ease-in;
+}
+
+.card .card-info:hover, .card .card-info:active {
+  backdrop-filter: blur(4px);
+}
+
+.card .card-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  top: 0;
+}
+
+.card img {
+  display: block;
+  border-radius: 22px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .card-date {
+  color: var(--icono_off_color);
+}
+
+.card .links-icon, .card .false-links-icon {
+  justify-content: end;
+  align-items: flex-end;
+  min-height: 1.5rem;
+}
+
+.card .links-icon {
+  position: absolute;
+  width: fit-content;
+  z-index: 1;
+  top: 100%;
+  left: 100%;
+  transform: translate(-100%,-100%);
+  padding-right: 0.625rem;
+  padding-bottom: 0.5rem;
+}
+
+.card .links-icon a {
+  color: var(--icono_off_color);
+}
+
+.card .links-icon svg {
+  height: 1.5rem;
+}
+
+.card .container-technologies {
+  color: var(--negro_noinv_color);
+  overflow-x: hidden;
+}

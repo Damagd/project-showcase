@@ -4,13 +4,15 @@ import { PersonalIcon } from "../icons/PersonalIcon";
 import { Link } from "./Link";
 import { useListenToPath } from "../../hooks/useListenToPath";
 
+import './NavBar.css';
+
 export function NavBar() {
   const {currentPath} = useListenToPath();
 
   return (
     <nav>
       <ul className="navigator">
-        <li className="option-nav">
+        <li className="option-nav" tooltip="hola">
             <Link to='/work' className={"option-nav " + (currentPath === '/work' ? 'selected' : '')} >
               <WorkIcon />
               <small>Work</small>

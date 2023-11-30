@@ -1,0 +1,58 @@
+.modal-container{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.modal {
+  position: relative;
+  height: 90%;
+  background-color: var(--blanco_noinv_color);
+  box-shadow: 0px 1px 10px black;
+  width: 75%;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: 1fr 1fr;
+  min-width: 190px;
+  overflow: hidden;
+}
+
+.modal .modal-content {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+  overflow: auto;
+  justify-content: space-between;
+}
+
+.modal .page-header h2 {
+  width: 90%;
+}
+
+.modal .links-icon a {
+  color: var(--icono_off_color);
+}
+
+.modal iframe {
+  border-radius: 0px 0 0 0px;
+}
+
+.modal .modal-content .modal-main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: auto;
+  gap: 20px;
+}
+
+.modal h3 {
+  margin-bottom: 1px;
+}

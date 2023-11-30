@@ -6,8 +6,6 @@ export function useListenToPath() {
   useEffect(() => {
     const onLocationChange = () => {
       setCurrentPath(window.location.pathname);
-      const element = document.getElementById('information');
-      element.scrollIntoView();
     }
 
     window.addEventListener('pushstate', onLocationChange);

@@ -1,7 +1,7 @@
 import { WatchIcon } from "../icons/WatchIcon"
 import { MoreIcon } from "../icons/MoreIcon"
 
-export function Nav({applyBlur, hide}) {
+export function Nav({applyBlur, removeBlur, hide}) {
 
   const claseHide = hide ? ' hide' : '';
 
@@ -10,7 +10,7 @@ export function Nav({applyBlur, hide}) {
       <div className="message-button">
         <p className={claseHide}>It seems like the background still is under construction</p>
 
-        <button onPointerEnter={applyBlur} onPointerLeave={applyBlur} className="shower">Inspect <WatchIcon /></button>
+        <button onPointerEnter={applyBlur} onPointerLeave={removeBlur} className="shower">Inspect <WatchIcon /></button>
       </div>
 
       <a href="#main" className={"pestana-holder" + claseHide}>

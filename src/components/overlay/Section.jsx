@@ -4,8 +4,8 @@ import { PersonalIcon } from "../icons/PersonalIcon";
 
 export function Section({type, title, description, children}) {
   return (
-    <section className="content" id={type}>
-      <div className="content-title">
+    <section className="page fadeIn" id={type}>
+      <header className="page-header">
         <h2>
           <strong>
             {type === 'about' && <AboutIcon />}
@@ -17,10 +17,11 @@ export function Section({type, title, description, children}) {
 
         <p>{description}</p>
         <hr className="separator" />
-        <div>
-          {children}
-        </div>
-      </div>
+      </header>
+
+      <section className="content">
+        {children}
+      </section>
     </section>
   );
 }

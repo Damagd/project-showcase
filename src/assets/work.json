@@ -1,0 +1,44 @@
+{
+  "projects": [
+    {
+      "_id": "0",
+      "photo": "",
+      "video": "https://www.youtube.com/embed/3xJwg8J8VAI?si=_EXDriz66COR2zNX",
+      "title": "3DBliss - prototype static page",
+      "date": "10/01/2023",
+      "technologies": [
+        "HTML","CSS", "JavaScript", "BootStrap", "Threejs", "Figma" 
+      ],
+      "short_description": "Static web page prototype/concept for a 3D printing company",
+      "description": "I was hired to design and develop the promotional static web page for the 3D printing company 3DBliss./*This first demo is just a prototype used as a visual concept for future references as the project moves forwards./*I used this project to get into 3D web development (allowed to  share the project without any relevant information of the organization).",
+      "links": [
+        {
+          "page": "github",
+          "link": "https://damagd.github.io/3dbliss/"
+        },
+        {
+          "page": "figma",
+          "link": "https://www.figma.com/file/W8QBtG6nbuBO0uPKqrSXPH/Memorias?type=design&node-id=1%3A2&mode=design&t=9J1RRo4FkXiRORBI-1" 
+        }
+      ]
+    },
+    {
+      "_id": "1",
+      "photo": "/radi.PNG",
+      "video": "https://www.youtube.com/embed/iA-v5bz-jN8?si=yuozI5z1TO_wIrYq",
+      "title": "RADI - Web application",
+      "date": "12/15/2022",
+      "technologies": [
+        "HTML","CSS", "JavaScript", "BootStrap", "PHP Laravel", "PMBOK", "SCRUM", "Figma" 
+      ],
+      "short_description": "Web application for project management on an IT department using a custom methodology",
+      "description": "''Registro de actividades para un departamento de informática'' (RADI), is a web application for project management in an IT department that I, along with four more people, were in charged of its development./*The projects that are managed in the application use an internal work methodology, which is the reason why the project was planned./*This project was planned and developed according to PMBOK, following its different declared processes/stages. In the last stages, we started to use SCRUM as a main methodology./*I was part of the design process (design both structural and visual), and later on I was the main in charge of the development process (programming)./*RADI is built without any Front-end framework, just using HTML/CSS/JS and a little of bootstrap, emulating an SPA. Its Back-end was built on PHP using the Laravel framework.",
+      "links": [
+        {
+          "page": "figma",
+          "link": "https://www.figma.com/file/kUQRe5A3MZxDGerXEQKBLb/RADI?type=design&node-id=216%3A153&mode=design&t=zGEin1nwLSIEfATV-1" 
+        }
+      ]
+    }
+  ]
+}

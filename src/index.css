@@ -39,9 +39,3 @@ html{
   overflow: scroll;
   overflow-x: hidden;
 }
-
-/*canvas {
-  opacity: 0;
-  touch-action: none;
-  animation: fade-in 5s ease 1s forwards;
-}*/
