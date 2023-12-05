@@ -1,12 +1,12 @@
 .card {
   width: 100%;
   height: 100%;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0.25rem;
-  color: var(--blanco_noinv_color);
+  color: #F5F5F5;
   
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -31,7 +31,7 @@
   backdrop-filter: blur(0px);
   height: 100%;
   justify-content:space-between;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   gap: 0.5rem;
   padding: 0.5rem;
   z-index: 1;
@@ -53,7 +53,7 @@
 
 .card img {
   display: block;
-  border-radius: 22px;
+  border-radius: 1.25rem;
   height: 100%;
   object-fit: cover;
 }
@@ -80,7 +80,7 @@
 }
 
 .card .links-icon a {
-  color: var(--icono_off_color);
+  color: #B9B9B9;
 }
 
 .card .links-icon svg {

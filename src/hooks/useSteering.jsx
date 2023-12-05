@@ -13,12 +13,6 @@ export function useSteering({speed, force = 0.1, radians, points}) {
     meshRef.current.geometry.rotateX(radians);
   }, [])
 
-  /*useEffect(() => {
-    if(loaded) return;
-    meshRef.current.geometry.rotateX(radians);
-    setLoaded(true);
-  }, [meshRef.current])*/
-
   const updateSteering = () => {
     var index = indexVisited;
 

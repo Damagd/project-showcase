@@ -47,7 +47,7 @@ export function SpotLightElement ({ color, children }) {
       <div 
       ref={elementRef}
       style={{
-        border: "2.5px solid var(--blanco_stroke_color)",
+        border: "2.5px solid #E8E8E8",
         opacity,
         WebkitMaskImage: `radial-gradient(80% 150px at ${position.x}px ${position.y}px, black 45%, transparent)`,
       }}

@@ -34,8 +34,23 @@
   --text_boton_weight: 600;
 }
 
+[data-theme="dark"] {
+  --blanco_noinv_color: #2C2F35;
+  --main_turquesa_color: #56C9B4;
+  --blanco_noinv_color_50: rgba(83, 83, 83, 0.4);
+  --blanco_stroke_color: #27292E;
+  --negro_noinv_color: #F5F5F5;
+  --icono_off_color: #535353;
+  --sleepy_turquesa_color: #373844;
+  --blanco_color_90: rgba(42,44,47,0.97);
+}
+
 html{
   scroll-behavior: smooth;
   overflow: scroll;
   overflow-x: hidden;
+}
+
+body {
+  background-color: #373844;
 }

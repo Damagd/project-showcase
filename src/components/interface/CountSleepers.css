@@ -1,0 +1,23 @@
+.count-sleepers {
+  position: absolute;
+  font-size: var(--text_h2_size);
+  color: white;
+  top: 100%;
+  left: 100%;
+  transform: translate(-100%,-100%);
+  padding-right: 0.625rem;
+  padding-bottom: 0.625rem;
+  opacity: 0.5;
+  cursor: default;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.count-sleepers:hover {
+  opacity: 1;
+}

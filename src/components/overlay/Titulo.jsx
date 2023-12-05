@@ -1,4 +1,3 @@
-import { useEffect } from "react"
 import { GithubIcon } from "../icons/GithubIcon"
 import { LinkedinIcon } from "../icons/LinkedinIcon"
 
@@ -13,8 +12,8 @@ export function Titulo ({ hide }) {
         <small>welcome to my portfolio</small>
 
         <div className="links-icon">
-          <a href="https://www.linkedin.com/in/keivin-martínez/" target="_blank"><GithubIcon /></a>
           <a href="https://www.linkedin.com/in/keivin-martínez/" target="_blank"><LinkedinIcon /></a>
+          <a href="https://github.com/Damagd" target="_blank"><GithubIcon /></a>
         </div>
       </div>
   )

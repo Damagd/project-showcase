@@ -1,24 +1,30 @@
 import './App.css'
-import { Canvas } from '@react-three/fiber'
-import { Scene } from './Scene.jsx'
 import { Overlay } from './components/interface/Overlay.jsx'
-import { useState } from 'react'
-
+import { useContext } from 'react'
+import { DarkMode } from './components/interface/DarkMode.jsx'
+import { OptionsContext } from './context/optionsOverlay.jsx'
+import { ActivateOverlay } from './components/interface/ActivateOverlay.jsx'
+import { AppThreeDe } from './components/scene/AppThreeDe.jsx'
+import { OptionsSceneProvider } from './context/optionsScene.jsx'
 
 function App() {
-  const [enableScene, setScene] = useState(false);
+  const {threeDe, overlay, setOverlay} = useContext(OptionsContext);
+
+  const showOverlay = () => {
+    setOverlay(true);
+  }
 
   return (
     <>
-    {
-      enableScene &&
-      <Canvas style={{position: 'fixed'}} shadows camera={{position: [-60, 0, -60], fov: 60}}>
-        <Scene></Scene>
-      </Canvas>
-    } 
-
-
-      <Overlay />
+      <DarkMode/>
+      { !overlay && <ActivateOverlay showOverlay={showOverlay} /> }
+      { 
+        threeDe && 
+        <OptionsSceneProvider> 
+          <AppThreeDe/> 
+        </OptionsSceneProvider> 
+      } 
+      { overlay && <Overlay /> }
     </>
   )
 }

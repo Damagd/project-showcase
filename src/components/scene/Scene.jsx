@@ -1,14 +1,17 @@
-import { Ambiente } from "./components/Ambiente.jsx";
-import { Actores } from "./components/Actores.jsx";
+import { Ambiente } from "./Ambiente.jsx";
+import { Actores } from "./Actores.jsx";
 import { OrbitControls } from '@react-three/drei';
+import { Suspense } from "react";
 
 export function Scene() {
 
   return (
     <>
-      <Ambiente />
+      <Ambiente/>
 
-      <Actores />
+      <Suspense fallback={null}>
+        <Actores />
+      </Suspense>
       
       <OrbitControls
       enablePan={false}

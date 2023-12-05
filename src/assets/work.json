@@ -2,7 +2,7 @@
   "projects": [
     {
       "_id": "0",
-      "photo": "",
+      "photo": "/bliss.PNG",
       "video": "https://www.youtube.com/embed/3xJwg8J8VAI?si=_EXDriz66COR2zNX",
       "title": "3DBliss - prototype static page",
       "date": "10/01/2023",
@@ -19,6 +19,10 @@
         {
           "page": "figma",
           "link": "https://www.figma.com/file/W8QBtG6nbuBO0uPKqrSXPH/Memorias?type=design&node-id=1%3A2&mode=design&t=9J1RRo4FkXiRORBI-1" 
+        },
+        {
+          "page": "youtube",
+          "link": "https://youtu.be/3xJwg8J8VAI?feature=shared"
         }
       ]
     },
@@ -37,6 +41,10 @@
         {
           "page": "figma",
           "link": "https://www.figma.com/file/kUQRe5A3MZxDGerXEQKBLb/RADI?type=design&node-id=216%3A153&mode=design&t=zGEin1nwLSIEfATV-1" 
+        },
+        {
+          "page": "youtube",
+          "link": "https://www.youtube.com/watch?v=iA-v5bz-jN8"
         }
       ]
     }

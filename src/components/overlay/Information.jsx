@@ -1,7 +1,7 @@
 import { NavBar } from "./NavBar";
 import { Router } from './Router.jsx'
 import { useInSight } from "../../hooks/useInSight.jsx";
-import { useEffect, useRef, lazy, Suspense } from "react";
+import { useRef, lazy, Suspense } from "react";
 import { LoadingCircle } from "./LoadingCircle.jsx";
 
 const AboutPage = lazy(() => import('./About.jsx'));
@@ -27,13 +27,6 @@ export function Information() {
   const ref1 = useRef(null);
   
   const isInView = useInSight(ref1, '/work');
-
-  useEffect(() => {    
-    if(window.location.pathname !== '/'){
-      const element = document.getElementById('information');
-      element.scrollIntoView({ behavior: "instant" });
-    }
-  }, []);
 
   return (
     <>

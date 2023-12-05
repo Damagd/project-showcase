@@ -3,6 +3,7 @@
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
+  color: var(--negro_noinv_color);
 
   display: flex;
   justify-content: center;
@@ -38,7 +39,7 @@
 }
 
 .modal .links-icon a {
-  color: var(--icono_off_color);
+  color: #B9B9B9;
 }
 
 .modal iframe {

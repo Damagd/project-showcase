@@ -7,11 +7,11 @@ export function Section({type, title, description, children}) {
     <section className="page fadeIn" id={type}>
       <header className="page-header">
         <h2>
-          <strong>
+          <b style={{color: 'var(--main_turquesa_color)'}}>
             {type === 'about' && <AboutIcon />}
             {type === 'work' && <WorkIcon />}
             {type === 'personal' && <PersonalIcon />}
-          </strong>
+          </b>
           {title}
         </h2>
 

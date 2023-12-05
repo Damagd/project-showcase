@@ -13,8 +13,6 @@ export function Modal() {
 
   const handleClose = () => {
     setOpened(false);
-    /*const modal = document.getElementById('modal');
-    modal.scrollIntoView();*/
   }
 
   const handleClickOut = (e) => {
@@ -36,7 +34,7 @@ export function Modal() {
     return () => {
       window.removeEventListener('openmodal', onOpenModal);
     }
-  },[]);
+  }, []);
 
   return (
     <>

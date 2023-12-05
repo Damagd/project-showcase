@@ -2,7 +2,7 @@ import { useGLTF } from "@react-three/drei";
 import { useEffect, useRef, useState } from "react";
 import { useAnimations } from "@react-three/drei";
 
-export function Constructor({isWalking = false, position, rotation}) {
+export function Constructor({ isWalking = false, position=[0,0,0], rotation=[0,0,0] }) {
   const group = useRef();
   const { nodes, animations } = useGLTF("/Constructora.glb");
   const { actions, names } = useAnimations(animations, group);
@@ -16,13 +16,9 @@ export function Constructor({isWalking = false, position, rotation}) {
       group.current.position.y = position[1];
       group.current.position.z = position[2];
 
-
       group.current.rotateX(rotation[0]);
       group.current.rotateY(rotation[1]);
       group.current.rotateZ(rotation[2]);
-
-      console.log('hola')
-      //group.current.rotation.set(rotation);
 
       setLoaded(true);
     }
@@ -34,7 +30,6 @@ export function Constructor({isWalking = false, position, rotation}) {
         <group name="Casco" position={[0, 7.493, 0]}>
           <mesh
             name="Ellipse"
-            castShadow
 
             geometry={nodes.Ellipse.geometry}
             position={[0.006, -1.875, 0]}
@@ -45,7 +40,6 @@ export function Constructor({isWalking = false, position, rotation}) {
           </mesh>
           <mesh
             name="Cube_5"
-            castShadow
 
             geometry={nodes.Cube_5.geometry}
             position={[0.008, -1.872, -0.191]}
@@ -57,7 +51,6 @@ export function Constructor({isWalking = false, position, rotation}) {
         <group name="Cuerpo" position={[0.008, 5.193, -0.191]}>
           <mesh
             name="Chaleco"
-            castShadow
 
             geometry={nodes.Chaleco.geometry}
             position={[0, -9.195, 0]}
@@ -67,7 +60,6 @@ export function Constructor({isWalking = false, position, rotation}) {
           </mesh>
           <mesh
             name="Playera"
-            castShadow
             geometry={nodes.Playera.geometry}
             position={[0, -9.195, 0]}
             scale={[0.069, 0.107, 0.069]}
@@ -76,7 +68,6 @@ export function Constructor({isWalking = false, position, rotation}) {
           </mesh>
           <mesh
             name="Cabeza"
-            castShadow
 
             geometry={nodes.Cabeza.geometry}
             material={nodes.Cabeza.material}
@@ -87,8 +78,6 @@ export function Constructor({isWalking = false, position, rotation}) {
           </mesh>
           <mesh
             name="Pantalones"
-            castShadow
-
             geometry={nodes.Pantalones.geometry}
             material={nodes.Pantalones.material}
             position={[0, -9.195, 0]}

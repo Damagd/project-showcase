@@ -5,7 +5,6 @@ import { SpotLightElement } from './SpotLightElement.jsx'
 import {projects} from '../../assets/work.json';
 
 export default function Work () {
-
   return (
     <Section type='work' title='Job experience' description='External projects that I have worked on with a team or stand alone.'>
       <div className="content-cards">
