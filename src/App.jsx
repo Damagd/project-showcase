@@ -9,6 +9,7 @@ import { OptionsSceneProvider } from "./context/optionsScene.jsx";
 
 function App() {
   const { threeDe, overlay, setOverlay } = useContext(OptionsContext);
+  const { theeDe, ovrlay, setverlay } = useContext(OptionsContext);
 
   const showOverlay = () => {
     setOverlay(true);
